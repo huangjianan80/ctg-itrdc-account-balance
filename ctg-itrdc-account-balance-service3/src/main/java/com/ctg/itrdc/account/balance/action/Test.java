@@ -1,8 +1,4 @@
 package com.ctg.itrdc.account.balance.action;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
 
@@ -10,18 +6,14 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ctg.itrdc.account.balance.service.impl.TestCommitServiceImpl;
 import com.ctg.itrdc.account.balance.service.impl.TestServiceImpl;
 import com.ctg.itrdc.account.balance.util.SpringUtil;
-import com.ctg.itrdc.account.bill.service.common.SpringUtils;
-import com.ctg.udal.daopub.jdbc.IJdbcDAO;
 import com.ctg.udal.daopub.jdbc.RowSet;
 import com.ctg.udal.daopub.jdbc.impl.JdbcDaoImpl;
 import com.ctg.udal.daopub.model.ListBean;
-import com.ctg.udal.gs.client.ClientSeqUtils;
 @Transactional
 @SuppressWarnings({"rawtypes","unchecked"})
 public class Test {
